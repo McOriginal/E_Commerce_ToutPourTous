@@ -1,14 +1,18 @@
 
+import classes from './Home.module.css';
+
+
 
 export default function HomeHeaderCategories(){
     return(
         <>
-        <div className="container">
-            <div className="row gap-2">
+        <div className={classes.categorie_container}>
+            <h3>Nos catégories disponible</h3>
+            <div className={classes.categories}>
                 {CategorieListe.map((categorie) => (
-                    <div key={categorie.id} className="categorie-card col-sm-3 ">
+                    <div key={categorie.id} className={classes.categorieItem}>
                             <img src={categorie.imgUrl} alt={categorie.categorieName} />
-                                <h5 className="categorie-title">{categorie.categorieName}</h5>
+                                <h5>{categorie.categorieName}</h5>
                     </div>
                 ))}
             </div>
@@ -30,7 +34,7 @@ const CategorieListe=[
 
     {
         id: 2,
-        categorieName: 'Maison et jardin',
+        categorieName: 'Maison et Décoration',
         imgUrl: 'https://i.pinimg.com/736x/aa/66/b1/aa66b168f7e102ab0b03dc9dc841037a.jpg'
     },
 

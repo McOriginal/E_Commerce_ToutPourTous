@@ -1,0 +1,237 @@
+
+.container{
+    background: radial-gradient(circle,#F29F58,#AB4459 );
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 80vh;
+}
+
+
+
+
+.container .box{
+    width: 50%;
+    margin: 10px 2%;
+}
+
+
+.boxtext{
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.boxtext .title{
+    font-family: var(--perkinsans);
+    letter-spacing: 1px;
+    font-size: 3rem;
+    font-size: 4rem;
+    color: var(--bgcolor);
+}
+
+.boxtext .text{
+    color: var(--lightcolor);
+    font-family: var(--perkinsans);
+}
+
+.boxtext .btn{
+    background: transparent;
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    color: var(--lightcolor);
+    font-family: var(--perkinsans);
+    border:1px solid var(--lightcolor);
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all ease-in-out 0.4s ;
+}
+
+.boxtext .btn:hover{
+    background: var(--bgcolor);
+    color: var(--lightcolor);
+    border: 1px solid var(--lightcolor);
+    box-shadow: 0px 1px 3px var(--lightcolor);
+}
+
+
+.container p{
+    color: var(--lightcolor);
+    font-size: 2rem;
+}
+
+.container .details{
+    color: var(--lightcolor);
+    line-height: 22px;
+    font-size: 0.9rem;
+}
+
+
+
+
+.container .imgContainer{
+    width: 35%;
+    height: 95%;
+    padding: 20px;
+}
+
+.imgContainer img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    #home img{
+    height: 400px;
+    object-fit: cover;margin: 30% auto;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+    #home img{
+    height: 400px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+}
+@media screen and (max-width: 450px) {
+
+    #home img{
+    height: 200px;
+    object-fit: cover;
+    margin: 0 10%;
+}
+}
+
+
+
+
+
+
+
+/* ############### style pour les boutons #############"" */
+
+
+.categorie_container .categories{
+   width: 100%;
+   margin: 2rem 0;
+   margin-bottom: 20%;
+}
+
+.categorie_container h3{
+    font-size: 1.4rem;
+    margin: 2rem 1rem;
+    font-family: var(--perkinsans);
+    color: var(--bgcolor);
+}
+.categorie_container .categories{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.categories .categorieItem{
+    width: 12rem;
+    height: 7rem;
+    border: 1px solid var(--textcolor);
+    border-radius: 50%;
+}
+
+
+.categorieItem img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.categorieItem h5{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+/* ################# Best product container ########## */
+
+
+.sliderr{
+    margin: 2rem;
+}
+
+
+
+ .card{
+    width: 150px;
+    height: 350px;    
+    border: 1px solid var(--bgcolor);
+    border-radius: 1rem;
+    padding: 10px;
+    box-shadow: 0px 2px 8px var(--bgcolor);
+    transition: all 0.2s ease-in;
+}
+
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0px 2px 8px var(--textcolor);
+}
+
+ .card .card_img{
+    width: 100%;
+    height: 230px;
+ }
+
+ .card  .card_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+
+ }
+
+ .card .card_body{
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+ }
+
+ .card_body p{
+    text-transform: capitalize;
+    font-family: var(--perkinsans);
+    color: var(--bgcolor);
+    font-weight: 600;
+ }
+
+.card_body button{
+    display: block;
+    position: absolute;
+    bottom: -50%;
+    width: 107%;
+    color: var(--lightcolor);
+    background: var(--buttoncolor);
+    border: 1px solid var(--textcolor);
+    padding: 5px;
+    border-radius: 0 0 1rem 1rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.4s;
+}
+
+.card_body button:hover{
+    background: var(--hovercolor);
+    color: var(--bgcolor);
+    border-color: var(--bgcolor);
+}
+
+
+/* ################# Best product container ########## */

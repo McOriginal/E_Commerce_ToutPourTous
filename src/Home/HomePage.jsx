@@ -1,3 +1,4 @@
+import HomeBestProduct from "./HomeBestProduct";
 import HomeHeader from "./HomeHeader";
 import HomeHeaderCategories from "./HomeHederCategories";
 
@@ -9,7 +10,7 @@ export default function HomePage(){
 
         <HomeHeader />
         <HomeHeaderCategories />
-        
+        <HomeBestProduct />
         </>
     )
 }
